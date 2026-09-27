@@ -3,6 +3,9 @@ from core.clear import clear
 def outro():
   input("precione [ENTER]")
   clear()
+
+def personalizar_loop(data):
+  print(roxo, data)
   
 def erro(data):
   print(vermelho, data)
