@@ -1,7 +1,7 @@
 import requests
 from core.carregar import carregar_wordlist
 from core.carregar import carregar_json
-from ui.mensagens import erro, sucesso, mensagem, personalizar
+from ui.mensagens import erro_loop, sucesso_loop, mensagem, personalizar_loop
 
 json_resposta = "config/respostas_web.json"
 json_app = "config/app.json"
@@ -25,20 +25,20 @@ class EnumerateDirectori:
     try:
       for diretorios in self.wordlist:
         url = f"{self.url}{diretorios}"
-        mensagem(f"testando : {url}")
+        print(f"\rtestando {url}", end="", flush=True)
         resposta = requests.get(url) 
         status = str(resposta.status_code)
         
         if status in self.resposta["respostas"]["sucesso"]:
-          sucesso(f"{url} ---> {status}")
+          sucesso_loop(f"{url} ---> {status}")
           self.sucesso +=1
         
         elif status in self.resposta["respostas"]["protegido"]:
-          personalizar(f"{url} ---> {status}")
+          personalizar_loop(f"{url} ---> {status}")
           self.sucesso += 1
         
         elif status in self.resposta["respostas"]["redirecionamento"]:
-          sucesso(f"{url} ---> {status}")
+          sucesso_loop(f"{url} ---> {status}")
           self.sucesso += 1
         
         elif status in self.resposta["respostas"]["erro"]:
