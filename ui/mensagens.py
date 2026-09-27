@@ -24,7 +24,7 @@ def personalizar(data):
   outro()
 
 def sucesso_loop(data):
-  print(verde, data)
+  print("\r", verde, data)
 
 def erro_loop(data):
-  print(vermelho, data)
+  print("\r", vermelho, data)
