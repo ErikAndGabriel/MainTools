@@ -22,3 +22,9 @@ ferramentas_bin = {
     "2": "bincheck",
     "3": "freebinchecker"
 }
+
+ferramentas_cnpj = {
+  "1": "brasilapi",
+  "2": "receitaws",
+  "3": "cnpjws"
+}
