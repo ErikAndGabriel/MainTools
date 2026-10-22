@@ -42,12 +42,12 @@ HOME
 │   ├── [03] CPF
 │   ├── [04] WHOIS
 │   ├── [05] TELEGRAM
-│   │   ├── {azul}[01]{reset} TELEGRAM BOT (TOKEN)
-│   │   │   ├── [01] INFORMAÇÕES DO BOT
-│   │   │   ├── [02] INFORMAÇÕES DE CHAT
-│   │   │   └── [00] VOLTAR
-│   │   ├── {azul}[02]{reset} TELEGRAM CONTA (TOKEN/SESSÃO)
-│   │   └── {azul}[00]{reset} VOLTAR
+│   │   ├── [01] TELEGRAM BOT (TOKEN)
+│   │   │   ├── {azul}[01]{reset} INFORMAÇÕES DO BOT
+│   │   │   ├── {azul}[02]{reset} INFORMAÇÕES DE CHAT
+│   │   │   └── {azul}[00]{reset} VOLTAR
+│   │   ├── [02] TELEGRAM CONTA (TOKEN/SESSÃO)
+│   │   └── [00] VOLTAR
 │   ├── [06] NOME
 │   ├── [07] USERNAME
 │   ├── [08] CNPJ
