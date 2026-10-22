@@ -10,7 +10,10 @@ from modulos.osint.formatters.formate_api import (
     format_viacep,
     format_freebinchecker,
     format_binlist,
-    format_bincheck
+    format_bincheck,
+    format_brasilapi,
+    format_receitaws,
+    format_cnpjws
 )
 FORMATADORES = {
     "ipwhois": format_ipwhois,
@@ -29,4 +32,10 @@ FORMATADORES_CEP = {
     "brasilapi": format_brasilapi,
     "apicep": format_apicep,
     "api_cep": format_apicep
+}
+
+FORMATADORES_CNPJ = {
+    "brasilapi": format_brasilapi,
+    "receitaws": format_receitaws,
+    "cnpjws": format_cnpjws
 }
