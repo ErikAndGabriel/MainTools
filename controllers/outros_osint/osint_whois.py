@@ -11,10 +11,14 @@ def painel_whois():
       if escolha == "0":
         clear()
         break
-      user = BuscarWhois(escolha)
-      user.Buscar()
-      outro()
-      continue 
+      elif escolha == "1":
+        user = BuscarWhois(escolha)
+        user.Buscar()
+        outro()
+        continue
+      else:
+        erro("escolha invalida")
+        outro()
     except Exception as e:
       print(f"erro: {e}")
       outro
