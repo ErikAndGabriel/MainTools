@@ -1,7 +1,6 @@
 from ui.menus.menus import menu_phishing
 from ui.prompt.prompt import prompt_phishing
 from ui.mensagens import erro
-from config.ferramentas.phishing import ferramentas
 from core.clear import clear
 
 def painel_phishing():
