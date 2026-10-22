@@ -12,7 +12,7 @@ def painel_whois():
         clear()
         break
       elif escolha == "1":
-        dominio = input("dominio ", promtp_whois)
+        dominio = input("dominio ", prompt_whois)
         user = BuscarWhois(dominio)
         user.Buscar()
         outro()
@@ -21,6 +21,6 @@ def painel_whois():
         erro("escolha invalida")
         outro()
     except Exception as e:
-      print(f"erro: {e}")
-      outro
+      erro(f"erro: {e}")
+      outro()
       continue
