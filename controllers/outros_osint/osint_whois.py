@@ -12,7 +12,7 @@ def painel_whois():
         clear()
         break
       elif escolha == "1":
-        dominio = input("dominio ", prompt_whois)
+        dominio = input(f"dominio {prompt_whois})
         user = BuscarWhois(dominio)
         user.Buscar()
         outro()
