@@ -8,7 +8,7 @@ import requests
 
 class Cnpj:
   def __init__(self, cnpj, api):
-    self.cnpj = ip
+    self.cnpj = cnpj
     self.apis_cnpj = api
     self.timeout = timeout("api")
     
