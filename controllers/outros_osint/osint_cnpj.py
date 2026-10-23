@@ -3,7 +3,7 @@ from ui.prompt.prompt_osint import prompt_cnpj
 from ui.mensagens import erro, outro
 from modulos.osint.cnpj import Cnpj
 from core.clear import clear
-from config.ferramentas.ferramsntas_ip import ferramentas_cnpj
+from config.ferramentas.ip import ferramentas_cnpj
 from config.APIS.apis_cnpj import APIS_CNPJ
 def painel_cnpj():
   while True:
