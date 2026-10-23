@@ -1,7 +1,7 @@
 from ui.banner import banner_execucao1 
 from config.APIS.apis_cnpj import APIS_CNPJ
 from core.config import timeout
-from modulos.osint.formatters.formato import FORMATADORES
+from modulos.osint.formatters.formato import FORMATADORES_CNPJ
 from core.clear import clear
 import json 
 import requests 
@@ -22,10 +22,10 @@ class Cnpj:
         )
         if resposta.status_code == 200:
           data = resposta.json()
-          if self.apis_cnpj in FORMATADORES:
+          if self.apis_cnpj in FORMATADORES_CNPJ:
             clear()
             print(banner_execucao1)
-            FORMATADORES[self.apis_cnpj](data)
+            FORMATADORES_CNPJ[self.apis_cnpj](data)
             return True
           else:
             return "erro de api invalida"  
