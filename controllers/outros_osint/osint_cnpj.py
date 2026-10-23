@@ -8,7 +8,7 @@ from config.APIS.apis_cnpj import APIS_CNPJ
 def painel_cnpj():
   while True:
     try:
-      print(menu_ip)
+      print(menu_cnpj)
       ot = int(input(prompt_cnpj))
       if ot == 0:
         clear()
