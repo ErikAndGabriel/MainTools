@@ -43,8 +43,8 @@ HOME
 │   ├── [04] WHOIS
 │   ├── [05] TELEGRAM
 │   │   ├── [01] TELEGRAM BOT (TOKEN)
-│   │   │   ├── {azul}[01]{reset} INFORMAÇÕES DO BOT
-│   │   │   ├── {azul}[02]{reset} INFORMAÇÕES DE CHAT
+│   │   │   ├── {azul}[01]{reset} INFORMAÇÕES DE CHAT 
+│   │   │   ├── {azul}[02]{reset} INFORMAÇÕES DO BOT 
 │   │   │   └── {azul}[00]{reset} VOLTAR
 │   │   ├── [02] TELEGRAM CONTA (TOKEN/SESSÃO)
 │   │   └── [00] VOLTAR
@@ -78,8 +78,8 @@ HOME
 │   ├── [03] CPF
 │   ├── [04] WHOIS
 │   ├── [05] TELEGRAM
-│   │   ├── {azul}[01]{reset} TELEGRAM BOT (TOKEN)
-│   │   ├── {azul}[02]{reset} TELEGRAM CONTA (TOKEN/SESSÃO)
+│   │   ├── [01] TELEGRAM BOT (TOKEN)
+│   │   ├── [02] TELEGRAM CONTA (TOKEN/SESSÃO)
 │   │   │   ├── {azul}[01]{reset} INFORMAÇÕES DA CONTA
 │   │   │   ├── {azul}[02]{reset} INFORMAÇÕES DO CHAT
 │   │   │   ├── {azul}[03]{reset} PESQUISAR MENSAGENS
@@ -88,7 +88,7 @@ HOME
 │   │   │   ├── {azul}[06]{reset} PALAVRAS-CHAVE
 │   │   │   ├── {azul}[07]{reset} LINKS
 │   │   │   └── {azul}[00]{reset} VOLTAR
-│   │   └── {azul}[00]{reset} VOLTAR
+│   │   └── [00] VOLTAR
 │   ├── [06] NOME
 │   ├── [07] USERNAME
 │   ├── [08] CNPJ
