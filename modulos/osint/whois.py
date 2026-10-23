@@ -1,4 +1,5 @@
 import whois
+from modulos.osint.formatters.formate_api import format_whois
 from ui.banner import banner_execucao1 
 from core.clear import clear 
 
@@ -11,8 +12,7 @@ class BuscarWhois:
       clear()
       print(banner_execucao1)
       buscar = whois.whois(self.servico)
-      for chave, valor in buscar.items():
-        print(f"{chave} : {valor}")
+      format_whois(buscar)
       return True
     except Exception as e:
       return f"erro {e}"
