@@ -1,4 +1,4 @@
-from ui.menus.osint.ip import menu_ip
+from ui.menus.osint.cnpj import menu_cnpj
 from ui.prompt.prompt_osint import prompt_ip
 from ui.mensagens import erro, outro
 from modulos.osint.cnpj import Cnpj
