@@ -1,5 +1,33 @@
 from ui.color import azul, amarelo, reset
 
+def format_whois(data):
+    if not data or not isinstance(data, dict):
+        print(f"{vermelho}Resposta inválida ou vazia.{reset}")
+        return
+    print(f"{azul}Domain Name                :{amarelo} {data.get('domain_name', 'N/A')}")
+    print(f"{azul}Registrar                  :{amarelo} {data.get('registrar', 'N/A')}")
+    print(f"{azul}Registrar URL              :{amarelo} {data.get('registrar_url', 'N/A')}")
+    print(f"{azul}Reseller                   :{amarelo} {data.get('reseller', 'N/A')}")
+    print(f"{azul}Whois Server               :{amarelo} {data.get('whois_server', 'N/A')}")
+    print(f"{azul}Referral URL               :{amarelo} {data.get('referral_url', 'N/A')}")
+    print(f"{azul}Updated Date               :{amarelo} {data.get('updated_date', 'N/A')}")
+    print(f"{azul}Creation Date              :{amarelo} {data.get('creation_date', 'N/A')}")
+    print(f"{azul}Expiration Date            :{amarelo} {data.get('expiration_date', 'N/A')}")
+    print(f"{azul}Name Servers               :{amarelo} {data.get('name_servers', 'N/A')}")
+    print(f"{azul}Status                     :{amarelo} {data.get('status', 'N/A')}")
+    print(f"{azul}Emails                     :{amarelo} {data.get('emails', 'N/A')}")
+    print(f"{azul}DNSSEC                     :{amarelo} {data.get('dnssec', 'N/A')}")
+    print(f"{azul}Name                       :{amarelo} {data.get('name', 'N/A')}")
+    print(f"{azul}Org                        :{amarelo} {data.get('org', 'N/A')}")
+    print(f"{azul}Address                    :{amarelo} {data.get('address', 'N/A')}")
+    print(f"{azul}City                       :{amarelo} {data.get('city', 'N/A')}")
+    print(f"{azul}State                      :{amarelo} {data.get('state', 'N/A')}")
+    print(f"{azul}Registrant Postal Code     :{amarelo} {data.get('registrant_postal_code', 'N/A')}")
+    print(f"{azul}Country                    :{amarelo} {data.get('country', 'N/A')}")
+    print(f"{azul}Tech Name                  :{amarelo} {data.get('tech_name', 'N/A')}")
+    print(f"{azul}Tech Org                   :{amarelo} {data.get('tech_org', 'N/A')}")
+    print(f"{azul}Admin Name                 :{amarelo} {data.get('admin_name', 'N/A')}")
+    print(f"{azul}Admin Org                  :{amarelo} {data.get('admin_org', 'N/A')}")
 def format_brasilapi(data):
     if not data or not isinstance(data, dict):
         print(f"{vermelho}Resposta inválida ou vazia.{reset}")
