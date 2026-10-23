@@ -12,7 +12,7 @@ class Cnpj:
     self.apis_cnpj = api
     self.timeout = timeout("api")
     
-  def CNPJBusca(self):
+  def CnpjBusca(self):
     if self.api_cnpj in APIS_CNPJ:
       url = APIS_CNPJ[self.apis_cnpj]["url"].format(self.cnpj)
       try:
