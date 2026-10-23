@@ -16,7 +16,7 @@ def painel_cnpj():
         
       if str(ot) in ferramentas_cnpj:
         nome = ferramentas_cnpj[str(ot)]
-        prompt = input(f"ip {prompt_cnpj}")
+        prompt = input(f"cnpj {prompt_cnpj}")
         user = Cnpj(prompt, nome)
         user.CnpjBusca()
         outro()
