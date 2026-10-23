@@ -1,5 +1,5 @@
 from ui.menus.osint.cnpj import menu_cnpj
-from ui.prompt.prompt_osint import prompt_ip
+from ui.prompt.prompt_osint import prompt_cnpj
 from ui.mensagens import erro, outro
 from modulos.osint.cnpj import Cnpj
 from core.clear import clear
@@ -9,14 +9,14 @@ def painel_cnpj():
   while True:
     try:
       print(menu_ip)
-      ot = int(input(prompt_ip))
+      ot = int(input(prompt_cnpj))
       if ot == 0:
         clear()
         break
         
       if str(ot) in ferramentas_cnpj:
         nome = ferramentas_cnpj[str(ot)]
-        prompt = input(f"ip {prompt_ip}")
+        prompt = input(f"ip {prompt_cnpj}")
         user = Cnpj(prompt, nome)
         user.CnpjBusca()
         outro()
