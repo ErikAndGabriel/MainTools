@@ -25,6 +25,6 @@ class UserName:
        except Exception as error:
           erro(f"error: {error}")
           return False
-       except KayboardInterrupt:
+       except KeyboardInterrupt:
           outro()
 
