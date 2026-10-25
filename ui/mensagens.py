@@ -10,7 +10,9 @@ def personalizar_loop(data):
 def erro(data):
   print(vermelho, data)
   outro()
-  
+
+# esse "sucesso" esta escrito errado, mas vai dar um trabalho
+#da porra arrumar isso
 def sucesso(data):
   print(verde, data)
   outro()
@@ -24,7 +26,7 @@ def personalizar(data):
   outro()
 
 def sucesso_loop(data):
-  print("\r", verde, data)
+  print(f"\r{verde}{data}")
 
 def erro_loop(data):
-  print("\r", vermelho, data)
+  print(f"\r {vermelho}{data}")
