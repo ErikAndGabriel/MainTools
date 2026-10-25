@@ -8,16 +8,25 @@ def painel_cpf():
   while True:
     try:
       print(menu_cpf)
-      cpf = input(prompt_cpf)
-      if cpf == "0":
+      escolha = int(input(prompt_cpf))
+      if escolha == 0:
         clear()
         break
-      clear()
-      print(banner_execucao1)
-      usuario = SisregConsulta(cpf)
-      outro()
-      continue
+      elif escolha == 1:
+        cpf = input(f"cpf {prompt_cpf}")
+        clear()
+        print(banner_execucao1)
+        usuario = SisregConsulta(cpf)
+        outro()
+        continue
+      else:
+        erro("escolha invalida!")
+        outro()
+        continue
     except Exception as e:
       erro(f"erro: {e}")
       continue
-      
+    except ValueError:
+      erro("somente numeros")
+      outro()
+      continue
