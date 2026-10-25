@@ -1,5 +1,6 @@
 from ui.prompt.prompt_osint import prompt_user_name
 from ui.menus.osint.user_name import menu_user_name
+from core.clear import clear
 from ui.mensagens import outro, sucesso, erro
 from modulos.osint.user_name import UserName
 def painel_user_name():
@@ -9,6 +10,7 @@ def painel_user_name():
            escolha = int(input(prompt_user_name))
            if escolha == 1:
               user = input(f"user_name {prompt_user_name}")
+              clear()
               usuario = UserName(user)
               usuario.buscar()
               outro()
