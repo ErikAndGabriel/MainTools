@@ -15,7 +15,7 @@ def painel_nome():
       elif escolha == "2":
         erro("sem logs disponíveis")
         outro()
-      elif escolha == "1"
+      elif escolha == "1":
         try:
           nome = input(f"nome {prompt_nome}")          
           quantidade = int(input(f"quantidade {prompt_nome}"))
