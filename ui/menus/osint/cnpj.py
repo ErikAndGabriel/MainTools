@@ -10,13 +10,13 @@ HOME
 │   ├── [03] CPF
 │   ├── [04] WHOIS
 │   ├── [05] TELEGRAM
-|   ├── [06] NOME
+│   ├── [06] NOME
 │   ├── [07] USERNAME
 │   ├── [08] CNPJ
-|        ├── {azul}[1]{reset} BRASILAPI
-|        ├── {azul}[2]{reset} RESEITAWS
-|        ├── {azul}[3]{reset} CNPJWS
-|        ├── {azul}[0]{reset} EXIT
+│   │     ├── {azul}[1]{reset} BRASILAPI
+│   │     ├── {azul}[2]{reset} RESEITAWS
+│   │     ├── {azul}[3]{reset} CNPJWS
+│   │     └── {azul}[0]{reset} EXIT
 │   ├── [09] PHONE (API)
 │   ├── [10] CEP
 │   ├── [11] DDD / DDI
