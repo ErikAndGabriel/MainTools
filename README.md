@@ -41,13 +41,13 @@ O projeto foi criado para facilitar estudos, desenvolvimento e organização de 
 Clone o repositório:
 
 ```bash
-git clone https://github.com/ErikAndGabriel/Manin_tools 
+git clone https://github.com/ErikAndGabriel/MainTools
 ```
 
 Entre na pasta do projeto:
 
 ```bash
-cd Manin_tools
+cd MainTools
 ```
 
 Instale as dependências:
