@@ -19,7 +19,7 @@ def painel_user_name():
            else:
               erro("escolha invalida")
               continue
-        except ValuerError:
+        except ValueError:
             erro("somente numeros")
             continue
         except Exception as e:
