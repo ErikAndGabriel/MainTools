@@ -1,24 +1,22 @@
-from ui.menus.osint.ip import menu_ip
-from ui.prompt.prompt_osint import prompt_ip
+from ui.menus.osint.ip import menu_git
+from ui.prompt.prompt_osint import prompt_git
 from ui.mensagens import erro, outro
-from modulos.osint.ip import Ip
+from modulos.osint.git import Git 
 from core.clear import clear
-from config.ferramentas.ip import ferramentas_ip
-from config.APIS.api_ip import APIS_IP 
-def painel_ip():
+from config.APIS.apis_outras import APIS_OUTRAS 
+def painel_git():
   while True:
     try:
-      print(menu_ip)
-      ot = int(input(prompt_ip))
+      print(menu_git)
+      ot = int(input(prompt_git))
       if ot == 0:
         clear()
         break
         
-      if str(ot) in ferramentas_ip:
-        nome = ferramentas_ip[str(ot)]
-        prompt = input(f"ip {prompt_ip}")
-        user = Ip(prompt, nome)
-        user.IpBusca()
+      elif escolha == 1:
+        prompt = input(f"git {prompt_git}")
+        user = Git(prompt, nome)
+        user.GitpBusca()
         outro()
         continue
         

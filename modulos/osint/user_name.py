@@ -18,13 +18,14 @@ class UserName:
                     sucesso_loop(f"{site} : {url_final}")
                  else:
                     erro_loop(f"{site} : {url_final}")
-              except KayboardInterrupt:
+              except KeyboardInterrupt:
                  outro()
-              except:
+              except requests.RequestException:
                  erro_loop(f"{site} : {url_final}")
        except Exception as error:
           erro(f"error: {error}")
           return False
        except KeyboardInterrupt:
+          print("")
           outro()
 
