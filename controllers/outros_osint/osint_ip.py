@@ -4,7 +4,7 @@ from ui.mensagens import erro, outro
 from modulos.osint.ip import Ip
 from core.clear import clear
 from config.APIS.apis_outras import APIS_OUTRAS 
-def painel_git():
+def painel_ip():
   while True:
     try:
       print(menu_ip)
