@@ -13,9 +13,10 @@ def painel_ip():
         clear()
         break
         
-      elif ot == 1:
-        prompt = input(f"ip {prompt_ip}")
-        user = Ip(prompt, nome)
+      elif str(ot) in ferramentas_ip:
+        api = ferramentas_ip[str(ot)]
+        ip = int(input(f"ip {prompt_ip}"))
+        user = Cep(ip, api)
         user.IpBusca()
         outro()
         continue
