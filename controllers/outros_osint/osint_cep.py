@@ -18,9 +18,9 @@ def painel_cep():
       if str(ot) in ferramentas_cep:
         api = ferramentas_cep[str(ot)]
         try:
-          cep = int(input(f"cep {prompt_cep}"))
+          cep = input(f"cep {prompt_cep}"))
         except ValueError:
-          erro("somente numeros no cep")
+          erro("Algum error ai")
           clear()
           continue 
         user = Cep(cep, api)
