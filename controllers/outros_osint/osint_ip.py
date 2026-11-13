@@ -13,7 +13,7 @@ def painel_ip():
         clear()
         break
         
-      elif escolha == 1:
+      elif ot == 1:
         prompt = input(f"ip {prompt_ip}")
         user = Ip(prompt, nome)
         user.IpBusca()
