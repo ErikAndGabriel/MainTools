@@ -18,7 +18,7 @@ def painel_cep():
       if str(ot) in ferramentas_cep:
         api = ferramentas_cep[str(ot)]
         try:
-          cep = int(input("cep > "))
+          cep = int(input(f"cep {prompt_cep}"))
         except ValueError:
           erro("somente numeros no cep")
           clear()
