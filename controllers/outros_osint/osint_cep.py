@@ -18,7 +18,7 @@ def painel_cep():
       if str(ot) in ferramentas_cep:
         api = ferramentas_cep[str(ot)]
         try:
-          cep = input(f"cep {prompt_cep}"))
+          cep = input(f"cep {prompt_cep}")
         except ValueError:
           erro("Algum error ai")
           clear()
