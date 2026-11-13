@@ -7,7 +7,7 @@ APIS_CEP = {
         "nome": "BrasilAPI",
         "url": "https://brasilapi.com.br/api/cep/v1/{}"
     },
-    "api_cep": {
+    "apicep": {
         "nome": "ApiCEP",
         "url": "https://cdn.apicep.com/file/apicep/{}.json"
     },
