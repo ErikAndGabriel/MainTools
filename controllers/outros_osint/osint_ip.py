@@ -1,22 +1,22 @@
-from ui.menus.osint.ip import menu_git
-from ui.prompt.prompt_osint import prompt_git
+from ui.menus.osint.ip import menu_ip
+from ui.prompt.prompt_osint import prompt_ip
 from ui.mensagens import erro, outro
-from modulos.osint.git import Git 
+from modulos.osint.ip import Ip
 from core.clear import clear
 from config.APIS.apis_outras import APIS_OUTRAS 
 def painel_git():
   while True:
     try:
-      print(menu_git)
-      ot = int(input(prompt_git))
+      print(menu_ip)
+      ot = int(input(prompt_ip))
       if ot == 0:
         clear()
         break
         
       elif escolha == 1:
-        prompt = input(f"git {prompt_git}")
-        user = Git(prompt, nome)
-        user.GitpBusca()
+        prompt = input(f"ip {prompt_ip}")
+        user = Ip(prompt, nome)
+        user.IpBusca()
         outro()
         continue
         
