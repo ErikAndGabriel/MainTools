@@ -23,16 +23,14 @@ class Ip:
         )
         if resposta.status_code == 200:
           data = resposta.json()
-        elif resposta.status_code == 429:
+        if resposta.status_code == 429:
           print("limite de request dessa api atingido")
           return False
-          if self.api_ip in FORMATADORES:
-            clear()
-            print(banner_execucao1)
-            FORMATADORES[self.api_ip](data)
-            return True
-          else:
-            return "erro de api invalida"  
+        elif self.api_ip in FORMATADORES:
+          clear()
+          print(banner_execucao1)
+          FORMATADORES[self.api_ip](data)
+          return True  
         else:
           return "erro de conexão"
       except Exception as e:
