@@ -18,6 +18,8 @@ class Cep:
         url,
         timeout=self.timeout
       )
+      if resposta.status_code != 200:
+        erro("erro de resposta na api")
       if resposta.status_code == 200:
         data = resposta.json()
         if self.api in FORMATADORES_CEP:
