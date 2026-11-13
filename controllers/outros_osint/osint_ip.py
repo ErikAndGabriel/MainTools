@@ -14,7 +14,7 @@ def painel_ip():
         clear()
         break
         
-      elif str(ot) in ferramentas_ip:
+      if str(ot) in ferramentas_ip:
         api = ferramentas_ip[str(ot)]
         ip = int(input(f"ip {prompt_ip}"))
         user = Cep(ip, api)
