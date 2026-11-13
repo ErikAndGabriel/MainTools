@@ -3,6 +3,7 @@ from ui.prompt.prompt_osint import prompt_ip
 from ui.mensagens import erro, outro
 from modulos.osint.ip import Ip
 from core.clear import clear
+from config.ferramentas.ip import ferramentas_ip
 from config.APIS.apis_outras import APIS_IP
 def painel_ip():
   while True:
