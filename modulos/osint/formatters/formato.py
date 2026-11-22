@@ -13,7 +13,8 @@ from modulos.osint.formatters.formate_api import (
     format_bincheck,
     format_brasilapi,
     format_receitaws,
-    format_cnpjws
+    format_cnpjws,
+    format_git
 )
 FORMATADORES = {
     "ipwhois": format_ipwhois,
@@ -38,4 +39,8 @@ FORMATADORES_CNPJ = {
     "brasilapi": format_brasilapi,
     "receitaws": format_receitaws,
     "cnpjws": format_cnpjws
+}
+
+FORMATADORES_OUTROS = {
+    "github": format_git
 }
