@@ -1,7 +1,7 @@
 from ui.banner import banner_execucao1 
 from config.APIS.apis_outras import APIS_OUTRAS
 from core.config import timeout
-from modulos.osint.formatters.formato import FORMATADORES
+from modulos.osint.formatters.formato import FORMATADORES_OUTROS 
 from core.clear import clear
 import requests 
 
@@ -27,7 +27,7 @@ class Git:
         elif self.api_git in FORMATADORES:
           clear()
           print(banner_execucao1)
-          FORMATADORES[self.api_git](data)
+          FORMATADORES_OUTROS[self.api_git](data)
           return True  
         else:
           return "erro de conexão"
