@@ -8,6 +8,7 @@ from controllers.outros_osint.osint_nome import painel_nome
 from controllers.outros_osint.osint_bin import painel_bin
 from controllers.outros_osint.osint_username import painel_user_name
 from controllers.outros_osint.osint_cnpj import painel_cnpj
+from controllers.outros_osint.osint_git import painel_git
 ferramentas = {
   "1": painel_ip,
   "2": painel_email,
@@ -18,5 +19,6 @@ ferramentas = {
   "7": painel_user_name,
   "8": painel_cnpj,
   "10": painel_cep,
+  "13": painel_git
   "16": painel_bin
 }
