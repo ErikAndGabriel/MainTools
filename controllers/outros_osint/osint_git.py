@@ -13,7 +13,7 @@ def painel_git():
         clear()
         break
 
-      elif escolha == 1:
+      elif ot == 1:
         prompt = input(f"git {prompt_git}")
         user = Git(prompt, nome)
         user.GitBusca()
