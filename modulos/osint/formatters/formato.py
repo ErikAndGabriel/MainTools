@@ -14,7 +14,7 @@ from modulos.osint.formatters.formate_api import (
     format_brasilapi,
     format_receitaws,
     format_cnpjws,
-    format_git
+    format_github
 )
 FORMATADORES = {
     "ipwhois": format_ipwhois,
@@ -42,5 +42,5 @@ FORMATADORES_CNPJ = {
 }
 
 FORMATADORES_OUTROS = {
-    "github": format_git
+    "github": format_github
 }
