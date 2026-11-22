@@ -15,7 +15,7 @@ def painel_git():
 
       elif ot == 1:
         prompt = input(f"git {prompt_git}")
-        user = Git(prompt, nome)
+        user = Git(prompt)
         user.GitBusca()
         outro()
         continue
