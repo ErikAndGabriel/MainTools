@@ -19,6 +19,6 @@ ferramentas = {
   "7": painel_user_name,
   "8": painel_cnpj,
   "10": painel_cep,
-  "13": painel_git
+  "13": painel_git,
   "16": painel_bin
 }
