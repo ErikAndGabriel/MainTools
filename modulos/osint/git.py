@@ -7,13 +7,13 @@ import requests
 
 class Git:
   def __init__(self, git):
-    self.ip = git
-    self.api_ip = APIS_OUTRAS["git"]
+    self.git = git
+    self.api_git = APIS_OUTRAS["git"]
     self.timeout = timeout("api")
     
   def GitBusca(self):
-    if self.api_ip in APIS_Git:
-      url = APIS_OUTRAS[self.api_ip]["url"].format(self.git)
+    if self.api_git in APIS_OUTRAS:
+      url = APIS_OUTRAS[self.api_git]["url"].format(self.git)
       try:
         resposta = requests.get(
           url, 
