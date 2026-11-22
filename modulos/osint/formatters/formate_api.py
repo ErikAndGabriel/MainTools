@@ -1,5 +1,33 @@
 from ui.color import azul, amarelo, reset
 
+
+def format_github(data):
+    if not data or not isinstance(data, dict):
+        print(f"{vermelho}Resposta inválida ou vazia.{reset}")
+        return
+    print(f"{azul}Login                      :{amarelo} {data.get('login', 'N/A')}")
+    print(f"{azul}ID                         :{amarelo} {data.get('id', 'N/A')}")
+    print(f"{azul}Node ID                    :{amarelo} {data.get('node_id', 'N/A')}")
+    print(f"{azul}Nome                       :{amarelo} {data.get('name', 'N/A')}")
+    print(f"{azul}Empresa                    :{amarelo} {data.get('company', 'N/A')}")
+    print(f"{azul}Blog                       :{amarelo} {data.get('blog', 'N/A')}")
+    print(f"{azul}Localização                :{amarelo} {data.get('location', 'N/A')}")
+    print(f"{azul}Email                      :{amarelo} {data.get('email', 'N/A')}")
+    print(f"{azul}Bio                        :{amarelo} {data.get('bio', 'N/A')}")
+    print(f"{azul}Twitter                    :{amarelo} {data.get('twitter_username', 'N/A')}")
+    print(f"{azul}Tipo                       :{amarelo} {data.get('type', 'N/A')}")
+    print(f"{azul}Admin do Site              :{amarelo} {data.get('site_admin', 'N/A')}")
+    print(f"{azul}Criado em                  :{amarelo} {data.get('created_at', 'N/A')}")
+    print(f"{azul}Atualizado em              :{amarelo} {data.get('updated_at', 'N/A')}")
+    print(f"{azul}Repositórios Públicos      :{amarelo} {data.get('public_repos', 'N/A')}")
+    print(f"{azul}Gists Públicos             :{amarelo} {data.get('public_gists', 'N/A')}")
+    print(f"{azul}Seguidores                 :{amarelo} {data.get('followers', 'N/A')}")
+    print(f"{azul}Seguindo                   :{amarelo} {data.get('following', 'N/A')}")
+    print(f"{azul}URL                        :{amarelo} {data.get('html_url', 'N/A')}")
+    print(f"{azul}Avatar                     :{amarelo} {data.get('avatar_url', 'N/A')}")
+    print(f"{azul}API URL                    :{amarelo} {data.get('url', 'N/A')}")
+    print(f"{azul}Repos URL                  :{amarelo} {data.get('repos_url', 'N/A')}")
+    
 def format_whois(data):
     if not data or not isinstance(data, dict):
         print(f"{vermelho}Resposta inválida ou vazia.{reset}")
