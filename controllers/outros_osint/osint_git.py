@@ -1,4 +1,4 @@
-from ui.menus.osint.ip import menu_git
+from ui.menus.osint.git import menu_git
 from ui.prompt.prompt_osint import prompt_git
 from ui.mensagens import erro, outro
 from modulos.osint.git import Git
@@ -16,7 +16,7 @@ def painel_git():
       elif escolha == 1:
         prompt = input(f"git {prompt_git}")
         user = Git(prompt, nome)
-        user.GitpBusca()
+        user.GitBusca()
         outro()
         continue
 
