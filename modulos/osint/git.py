@@ -12,7 +12,7 @@ class Git:
     self.timeout = timeout("api")
     
   def GitBusca(self):
-    if "github" in APIS_OUTRAS:
+    if "git" in APIS_OUTRAS:
       url = APIS_OUTRAS[self.api_git]["url"].format(self.git)
       try:
         resposta = requests.get(
