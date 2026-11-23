@@ -12,7 +12,7 @@ class Git:
     self.timeout = timeout("api")
     
   def GitBusca(self):
-    if self.api_git in APIS_OUTRAS:
+    if "github" in APIS_OUTRAS:
       url = APIS_OUTRAS[self.api_git]["url"].format(self.git)
       try:
         resposta = requests.get(
@@ -24,7 +24,7 @@ class Git:
         if resposta.status_code == 429:
           print("limite de request dessa api atingido")
           return False
-        elif self.api_git in FORMATADORES:
+        elif self.api_git in FORMATADORES_OUTROS:
           clear()
           print(banner_execucao1)
           FORMATADORES_OUTROS[self.api_git](data)
