@@ -16,7 +16,9 @@ HOME
 │   ├── [10] CEP
 │   ├── [11] DDD / DDI
 │   ├── [12] NOME PAI
-│   ├── {azul}[13]{reset} GITHUB
+│   ├── [13] GITHUB
+│        ├── {azul}[1]{reset} GITHUB 
+│        └── {azul}[0]{reset} EXIT
 │   ├── [14] INSTAGRAM
 │   ├── [15] NOME MÃE
 │   ├── [16] BIN
